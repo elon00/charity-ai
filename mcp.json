@@ -1,0 +1,33 @@
+{
+  "name": "charity-ai-mcp",
+  "version": "1.0.0",
+  "description": "Charity AI Model Context Protocol Server for Autonomous Caritas Protocol, Zero-Leakage Mutual Aid, Grassroots Almsgiving & Destitute Relief Infrastructure",
+  "tools": [
+    {
+      "name": "audit_caritas_efficiency",
+      "description": "Audit charitable allocations ensuring 100% direct delivery, zero administrative skimming, and genuine need verification",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "context": { "type": "string" },
+          "evaluation_metric": { "type": "string" }
+        },
+        "required": ["context"]
+      }
+    },
+    {
+      "name": "disburse_destitute_relief_aid",
+      "description": "Trigger direct zero-leakage micro-escrows to unbanked individuals, disaster victims, and impoverished families",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "recipient": { "type": "string" },
+          "amount_wei": { "type": "string" },
+          "proof_hash": { "type": "string" }
+        },
+        "required": ["category", "recipient", "amount_wei"]
+      }
+    }
+  ]
+}
